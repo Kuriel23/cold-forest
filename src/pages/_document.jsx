@@ -7,7 +7,7 @@ export default class Document extends NextDocument {
         <Head>
           {/* Default meta */}
           <meta name="author" content="Cold Forest" />
-          <meta name="theme-color" content="#FFFF00" />
+          <meta name="theme-color" content="#3db0f7" />
           <meta
             name="keywords"
             content="cold forest, discord, server, cold game, waifus"
