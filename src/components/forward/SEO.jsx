@@ -8,7 +8,7 @@ export function SEO({
   url,
   children,
   title = "Cold Forest - O seu servidor preferido.",
-  image = "/favicon.png",
+  image = "/seologo.png",
   description = "Este é um site de um servidor de Discord junto com seu jogo Cold Game e uma Newsletter.",
 }) {
   const router = useRouter();
@@ -22,8 +22,8 @@ export function SEO({
 
       <link rel="canonical" href={canonical} />
 
-      <link rel="icon" href="/favicon.png" />
-      <link rel="shortcut icon" href="/favicon.png" />
+      <link rel="icon" href="/seologo.png" />
+      <link rel="shortcut icon" href="/seologo.png" />
 
       <link itemProp="url" href={APP_URL} />
 
