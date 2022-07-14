@@ -29,7 +29,7 @@ export const chakraTheme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: 'gray.900'
+        bg: 'white'
       }
     }
   }

@@ -1,24 +1,29 @@
 html,
 body {
-  scrollbar-color: yellow #292A2E;
+  scrollbar-color: cyan #afeeee;
   scrollbar-width: 3px;
 
   scroll-behavior: smooth;
-  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Gravity_Falls_BillCipherCursor.png'), auto;
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/32/Gravity_Falls_BillCipherCursor.png"),
+    auto;
 }
 
 body::-webkit-scrollbar {
   width: 3px;
 }
- 
+
 body::-webkit-scrollbar-thumb {
-  background: yellow; 
+  background: cyan;
 }
 
 body::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
 
 *:focus {
-  box-shadow: none!important;
+  box-shadow: none !important;
+}
+
+#menu-list {
+  background: black;
 }
