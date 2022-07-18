@@ -39,13 +39,14 @@ export default function Home() {
   return (
     <>
       <div
+        className="home"
         style={{
-          backgroundImage: "url(/background.jpg) no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
           position: "static",
           height: "100vh",
           overflow: "hidden",
+          background: "url(/background.jpg) no-repeat",
+          backgroundPosition: "right",
+          backgroundSize: "contain",
         }}
       >
         <SEO />
@@ -71,8 +72,8 @@ export default function Home() {
                     />
                   </InputGroup>
                 </GridItem>
-                <GridItem w="100%" m="auto" isLazy={true}>
-                  <Menu m="auto" w="fit-content">
+                <GridItem w="100%" m="auto">
+                  <Menu m="auto" w="fit-content" islazy={true}>
                     <MenuButton
                       bg="#9D2B1F"
                       ml="50%"
@@ -86,12 +87,20 @@ export default function Home() {
                       color="#B63627"
                       align="center"
                       borderBottomRadius="25px"
-                      fontSize="32px"
-                      fontFamily="Indie Flower"
+                      fontSize="24px"
+                      fontFamily="Acme"
+                      style={{ fontAlign: "center", textAlign: "center" }}
+                      boxShadow={`0px 0px 10px rgba(0, 0, 0, 0.4)`}
                     >
                       <MenuItem>• Sobre</MenuItem>
                       <MenuItem>• Suporte</MenuItem>
-                      <MenuItem>• Créditos</MenuItem>
+                      <MenuItem
+                        onClick={(event) =>
+                          (window.location.href = "/creditos")
+                        }
+                      >
+                        • Créditos
+                      </MenuItem>
                       <Box
                         bg="#B63627"
                         w="70%"
@@ -156,7 +165,7 @@ export default function Home() {
                 <VStack w="37%" ml="150px">
                   <Box
                     bg="#B63627"
-                    mr="29.5vh"
+                    mr="36.5vh"
                     transform="translateY(40px)"
                     p={1}
                     borderRadius="10px"
@@ -170,7 +179,7 @@ export default function Home() {
                     _hover={{ bg: "#9D2B1F" }}
                     _active={{ bg: "#9D2B1F" }}
                     borderRadius="50px"
-                    w="30vh"
+                    w="37vh"
                     mb={30}
                     p={5}
                     h="60px"
@@ -182,7 +191,7 @@ export default function Home() {
                   </Button>
                   <Box
                     bg="#B63627"
-                    transform="translate(-15vh, 40px)"
+                    transform="translate(-18vh, 40px)"
                     p={1}
                     borderRadius="10px"
                     zIndex={5}
@@ -195,7 +204,7 @@ export default function Home() {
                     _hover={{ bg: "#9D2B1F" }}
                     _active={{ bg: "#9D2B1F" }}
                     borderRadius="50px"
-                    w="30vh"
+                    w="37vh"
                     p={5}
                     h="60px"
                     color="white"

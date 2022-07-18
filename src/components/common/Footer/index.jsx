@@ -1,26 +1,36 @@
-import { Flex, Box } from '@chakra-ui/react'
+import { Box, Text, HStack } from "@chakra-ui/react";
+import { GrInstagram, GrPinterest, GrTwitter } from "react-icons/gr";
 
-import { Brand } from './Brand'
-import { Links } from './Links'
-
-export function Footer () {
+export function Footer() {
   return (
-    <Box as='footer'>
-      <Box borderTopWidth='5px' borderTopColor='yellow' bg='#2C2F33'>
-        <Flex
-          w='100%'
-          px='30'
-          py='5'
-          m='0 auto'
-          flexDir={{ base: 'column', lg: 'row' }}
-          align={{ base: 'unset', lg: 'center' }}
-          justify='space-between'
-        >
-          <Brand />
-
-          <Links />
-        </Flex>
-      </Box>
+    <Box as="footer" m="50px auto" pb="50px">
+      <Text color="#B63627" m="auto">
+        Conheça nossas redes sociais.
+      </Text>
+      <HStack m="5px auto" gap="10">
+        <GrInstagram
+          size="48px"
+          color="#B63627"
+          cursor="pointer"
+          onClick={(event) =>
+            window.open("https://www.instagram.com/cold.forest_/", "_blank")
+          }
+        />
+        <GrPinterest
+          size="48px"
+          color="#B63627"
+          cursor="pointer"
+          onClick={(event) => window.open("https://pin.it/2zP9WLE", "_blank")}
+        />
+        <GrTwitter
+          size="48px"
+          color="#B63627"
+          cursor="pointer"
+          onClick={(event) =>
+            window.open("https://twitter.com/coldforest50", "_blank")
+          }
+        />
+      </HStack>
     </Box>
-  )
+  );
 }
