@@ -269,7 +269,7 @@ export default function Home() {
                   cursor="pointer"
                   onClick={(event) =>
                     window.open(
-                      "https://discord.com/users/354233941550694400",
+                      "https://discord.com/users/833413245586767922",
                       "_blank"
                     )
                   }
@@ -278,7 +278,7 @@ export default function Home() {
             </VStack>
             <VStack>
               <Avatar
-                src=""
+                src="https://i.imgur.com/J90P978.png"
                 w="421px"
                 ml="25px"
                 size="3xl"
@@ -330,7 +330,8 @@ export default function Home() {
                 mt="50px"
                 ml="30px"
               >
-                Administrator no servidor de Discord do projeto, criou várias Cold Waifus e ajudou em sugestões para o projeto.
+                Administrator no servidor de Discord do projeto, criou várias
+                Cold Waifus e ajudou em sugestões para o projeto.
               </Text>
               <HStack pt="150px" pl="85%">
                 <SiDiscord
