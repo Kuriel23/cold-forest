@@ -37,6 +37,7 @@ export function Header () {
           cursor="pointer"
           _active={{ bg: "transparent" }}
           _hover={{ color: "#9D2B1F" }}
+          onClick={(event) => (window.location.href = "/")}
         />
 
         <Logo />

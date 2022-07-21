@@ -186,6 +186,7 @@ export default function Home() {
                     color="white"
                     fontSize="32px"
                     fontFamily="z_arista_lightregular"
+                    onClick={(event) => (window.location.href = "/newsletter")}
                   >
                     Newsletter
                   </Button>
