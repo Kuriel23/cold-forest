@@ -22,6 +22,7 @@ import {
   MenuOptionGroup,
   MenuDivider,
   Grid,
+  SimpleGrid,
   Divider,
   Image,
   GridItem,
@@ -39,7 +40,7 @@ export default function Home() {
   return (
     <>
       <SEO />
-      <Container>
+      <Container backgroundImage="url('https://i.imgur.com/8PLktWw.png')" backgroundRepeat="no-repeat" backgroundPosition="left 150px" backgroundSize="250px">
         <Section h="100vh" flexDir="column">
           <Header />
           <VStack mt="30px" w="100%">
@@ -129,6 +130,7 @@ export default function Home() {
           </VStack>
           <HStack
             mt="25px"
+            mb="50px"
             display="flex"
             justifyContent="center"
             align="center"
@@ -136,6 +138,124 @@ export default function Home() {
             <Box w="10%" bg="#B63627" h="3px" borderRadius="25px"></Box>
             <BsFillTreeFill size="32px" color="#B63627" />
             <Box w="10%" bg="#B63627" h="3px" borderRadius="25px"></Box>
+          </HStack>
+          <SimpleGrid ml="15px" mr="15px" columns={[2, null, 3]}>
+            <VStack display="flex" cursor="pointer">
+              <Image
+                src="https://www.spclinic.pt/wp-content/plugins/ninja-forms/assets/img/no-image-available-icon-6.jpg"
+                h="300px"
+                w="480px"
+              />
+              <Heading color="#B63627" _hover={{ color: "#9D2B1F" }}>
+                Título
+              </Heading>
+              <Text
+                color="#B63627"
+                fontSize="24px"
+                _hover={{ color: "#9D2B1F" }}
+              >
+                Subtítulo
+              </Text>
+            </VStack>
+            <VStack display="flex" cursor="pointer">
+              <Image
+                src="https://www.spclinic.pt/wp-content/plugins/ninja-forms/assets/img/no-image-available-icon-6.jpg"
+                h="300px"
+                w="480px"
+              />
+              <Heading color="#B63627" _hover={{ color: "#9D2B1F" }}>
+                Título
+              </Heading>
+              <Text
+                color="#B63627"
+                fontSize="24px"
+                _hover={{ color: "#9D2B1F" }}
+              >
+                Subtítulo
+              </Text>
+            </VStack>
+            <VStack display="flex" cursor="pointer">
+              <Image
+                src="https://www.spclinic.pt/wp-content/plugins/ninja-forms/assets/img/no-image-available-icon-6.jpg"
+                h="300px"
+                w="480px"
+              />
+              <Heading color="#B63627" _hover={{ color: "#9D2B1F" }}>
+                Título
+              </Heading>
+              <Text
+                color="#B63627"
+                fontSize="24px"
+                _hover={{ color: "#9D2B1F" }}
+              >
+                Subtítulo
+              </Text>
+            </VStack>
+            <VStack display="flex" cursor="pointer">
+              <Image
+                src="https://www.spclinic.pt/wp-content/plugins/ninja-forms/assets/img/no-image-available-icon-6.jpg"
+                h="300px"
+                w="480px"
+              />
+              <Heading color="#B63627" _hover={{ color: "#9D2B1F" }}>
+                Título
+              </Heading>
+              <Text
+                color="#B63627"
+                fontSize="24px"
+                _hover={{ color: "#9D2B1F" }}
+              >
+                Subtítulo
+              </Text>
+            </VStack>
+            <VStack display="flex" cursor="pointer">
+              <Image
+                src="https://www.spclinic.pt/wp-content/plugins/ninja-forms/assets/img/no-image-available-icon-6.jpg"
+                h="300px"
+                w="480px"
+              />
+              <Heading color="#B63627" _hover={{ color: "#9D2B1F" }}>
+                Título
+              </Heading>
+              <Text
+                color="#B63627"
+                fontSize="24px"
+                _hover={{ color: "#9D2B1F" }}
+              >
+                Subtítulo
+              </Text>
+            </VStack>
+            <VStack display="flex" cursor="pointer">
+              <Image
+                src="https://www.spclinic.pt/wp-content/plugins/ninja-forms/assets/img/no-image-available-icon-6.jpg"
+                h="300px"
+                w="480px"
+              />
+              <Heading color="#B63627" _hover={{ color: "#9D2B1F" }}>
+                Título
+              </Heading>
+              <Text
+                color="#B63627"
+                fontSize="24px"
+                _hover={{ color: "#9D2B1F" }}
+              >
+                Subtítulo
+              </Text>
+            </VStack>
+          </SimpleGrid>
+          <HStack
+            mt="25px"
+            display="flex"
+            justifyContent="center"
+            align="center"
+          >
+            <Text color="#B63627" fontSize="24px" fontWeight="bold">
+              Anterior
+            </Text>
+            <BsFillTreeFill size="32px" color="#B63627" />
+            <Text color="#B63627" fontSize="24px" fontWeight="bold">
+              Próximo
+            </Text>
           </HStack>
           <Footer />
         </Section>
