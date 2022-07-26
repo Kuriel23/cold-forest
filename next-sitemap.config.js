@@ -1,4 +1,5 @@
 module.exports = {
-  siteUrl: 'https://www.coldforest.cf',
-  generateRobotsTxt: false
-}
+  siteUrl: "https://www.coldforest.cf",
+  generateRobotsTxt: false,
+  generateIndexSitemap: false,
+};
