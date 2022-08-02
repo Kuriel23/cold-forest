@@ -120,7 +120,7 @@ export default function Home() {
               </Grid>
             </HStack>
             <HStack style={{ justifyContent: "center" }} w="100%">
-              <VStack w="63%">
+              <VStack display={{base: "none", xl: "flex"}} w="63%">
                 <Image
                   ml="50px"
                   w="100%"
@@ -131,7 +131,7 @@ export default function Home() {
                   size="48px"
                   mt="50px"
                   color="#B63627"
-                  style={{ transform: "translate(37vh, -18.5vh)" }}
+                  style={{ transform: "translate(18.70vw, -9.35vw)" }}
                   cursor="pointer"
                   onClick={(event) =>
                     window.open(
@@ -144,7 +144,7 @@ export default function Home() {
                   size="48px"
                   mt="50px"
                   color="#B63627"
-                  style={{ transform: "translate(48vh, -24.5vh)" }}
+                  style={{ transform: "translate(24.26vw, -12.38vw)" }}
                   cursor="pointer"
                   onClick={(event) =>
                     window.open("https://pin.it/2zP9WLE", "_blank")
@@ -154,7 +154,8 @@ export default function Home() {
                   size="48px"
                   mt="50px"
                   color="#B63627"
-                  style={{ transform: "translate(60vh, -30.5vh)" }}
+                  display={{ base: "none", lg: "none", xl: "flex" }}
+                  style={{ transform: "translate(30.33vw, -15.30vw)" }}
                   cursor="pointer"
                   onClick={(event) =>
                     window.open("https://twitter.com/coldforest50", "_blank")
