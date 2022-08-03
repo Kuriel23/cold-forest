@@ -93,7 +93,13 @@ export default function Home() {
                       boxShadow={`0px 0px 10px rgba(0, 0, 0, 0.4)`}
                     >
                       <MenuItem>• Sobre</MenuItem>
-                      <MenuItem>• Suporte</MenuItem>
+                      <MenuItem
+                        onClick={(event) =>
+                          (window.location.href = "/discord")
+                        }
+                      >
+                        • Suporte
+                      </MenuItem>
                       <MenuItem
                         onClick={(event) =>
                           (window.location.href = "/creditos")
