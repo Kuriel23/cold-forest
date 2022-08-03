@@ -58,7 +58,7 @@ export default function Home() {
                   <Box bg="white"></Box>
                 </GridItem>
                 <GridItem w="100%">
-                  <InputGroup m="auto" mt="10px">
+                  <InputGroup m="auto" mt="0.53vw">
                     <InputLeftElement
                       pointerEvents="none"
                       children={<FaSearch color="#CE958F" />}
@@ -67,7 +67,7 @@ export default function Home() {
                       placeholder="Pesquise..."
                       _placeholder={{ color: "#CE958F", opacity: 1 }}
                       borderColor="#CE958F"
-                      borderRadius="50px"
+                      borderRadius="2.65vw"
                       variant="outline"
                     />
                   </InputGroup>
@@ -79,7 +79,7 @@ export default function Home() {
                       ml="50%"
                       p="3"
                       w="fit-content"
-                      borderBottomRadius="10px"
+                      borderBottomRadius="0.53vw"
                     >
                       <RiMenu5Fill size="30px" color="white" />
                     </MenuButton>
@@ -112,7 +112,7 @@ export default function Home() {
                         cursor="pointer"
                         onClick={(event) => (window.location.href = "/")}
                       >
-                        <VscFoldUp size="32px" color="white" />
+                        <VscFoldUp size="1.69vw" color="white" />
                       </Box>
                     </MenuList>
                   </Menu>
@@ -120,47 +120,49 @@ export default function Home() {
               </Grid>
             </HStack>
             <HStack style={{ justifyContent: "center" }} w="100%">
-              <VStack display={{base: "none", xl: "flex"}} w="63%">
+              <VStack display={{ base: "none", xl: "flex" }} w="63%">
                 <Image
-                  ml="50px"
-                  w="100%"
+                  ml="2.65vw"
+                  w="100vw"
                   src="/apresentation.png"
                   style={{ pointerEvents: "none" }}
                 />
-                <GrInstagram
-                  size="48px"
-                  mt="50px"
-                  color="#B63627"
+                <HStack
+                  pl="9.54vw"
+                  display="inline-flex"
+                  mt="2.65vw"
+                  gap="40px"
                   style={{ transform: "translate(18.70vw, -9.35vw)" }}
-                  cursor="pointer"
-                  onClick={(event) =>
-                    window.open(
-                      "https://www.instagram.com/cold.forest_/",
-                      "_blank"
-                    )
-                  }
-                />
-                <GrPinterest
-                  size="48px"
-                  mt="50px"
-                  color="#B63627"
-                  style={{ transform: "translate(24.26vw, -12.38vw)" }}
-                  cursor="pointer"
-                  onClick={(event) =>
-                    window.open("https://pin.it/2zP9WLE", "_blank")
-                  }
-                />
-                <GrTwitter
-                  size="48px"
-                  mt="50px"
-                  color="#B63627"
-                  display={{ base: "none", lg: "none", xl: "flex" }}
-                  style={{ transform: "translate(30.33vw, -15.30vw)" }}
-                  cursor="pointer"
-                  onClick={(event) =>
-                    window.open("https://twitter.com/coldforest50", "_blank")
-                  }
-                />
+                >
+                  <GrInstagram
+                    size="2.54vw"
+                    color="#B63627"
+                    cursor="pointer"
+                    onClick={(event) =>
+                      window.open(
+                        "https://www.instagram.com/cold.forest_/",
+                        "_blank"
+                      )
+                    }
+                  />
+                  <GrPinterest
+                    size="2.54vw"
+                    color="#B63627"
+                    cursor="pointer"
+                    onClick={(event) =>
+                      window.open("https://pin.it/2zP9WLE", "_blank")
+                    }
+                  />
+                  <GrTwitter
+                    size="2.54vw"
+                    color="#B63627"
+                    display={{ base: "none", lg: "none", xl: "flex" }}
+                    cursor="pointer"
+                    onClick={(event) =>
+                      window.open("https://twitter.com/coldforest50", "_blank")
+                    }
+                  />
+                </HStack>
               </VStack>
               <HStack m="0" style={{ justifyContent: "center" }} mb="0">
                 <VStack w="37%" ml="150px">
@@ -169,23 +171,23 @@ export default function Home() {
                     mr="36.5vh"
                     transform="translateY(40px)"
                     p={1}
-                    borderRadius="10px"
+                    borderRadius="0.53vw"
                     zIndex={5}
                     boxShadow="0px 0px 10px rgba(0, 0, 0, 0.7)"
                   >
-                    <FaTree size="48px" color="white" />
+                    <FaTree size="2.54vw" color="white" />
                   </Box>
                   <Button
                     bg="#B63627"
                     _hover={{ bg: "#9D2B1F" }}
                     _active={{ bg: "#9D2B1F" }}
-                    borderRadius="50px"
+                    borderRadius="2.65vw"
                     w="37vh"
                     mb={30}
                     p={5}
-                    h="60px"
+                    h="3.18vw"
                     color="white"
-                    fontSize="32px"
+                    fontSize="1.69vw"
                     fontFamily="z_arista_lightregular"
                     onClick={(event) => (window.location.href = "/newsletter")}
                   >
@@ -195,22 +197,22 @@ export default function Home() {
                     bg="#B63627"
                     transform="translate(-18vh, 40px)"
                     p={1}
-                    borderRadius="10px"
+                    borderRadius="0.53vw"
                     zIndex={5}
                     boxShadow="0px 0px 10px rgba(0, 0, 0, 0.7)"
                   >
-                    <FaTree size="48px" color="white" />
+                    <FaTree size="2.54vw" color="white" />
                   </Box>
                   <Button
                     bg="#B63627"
                     _hover={{ bg: "#9D2B1F" }}
                     _active={{ bg: "#9D2B1F" }}
-                    borderRadius="50px"
+                    borderRadius="2.65vw"
                     w="37vh"
                     p={5}
-                    h="60px"
+                    h="3.18vw"
                     color="white"
-                    fontSize="32px"
+                    fontSize="1.69vw"
                     fontFamily="z_arista_lightregular"
                   >
                     Cold Game

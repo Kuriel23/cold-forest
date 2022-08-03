@@ -166,14 +166,14 @@ export default function Home() {
                 ml="25px"
                 size="3xl"
                 boxShadow="5px 0 0 rgba(0, 0, 0, 0.1)"
-                transform="translateY(-150px)"
+                transform="translateY(-15.73vh)"
               />
               <Text
                 color="#B63627"
                 fontSize="24px"
                 fontFamily="arial_rounded_mt_boldregular"
                 mt="50px"
-                transform="translateY(-100px)"
+                transform="translateY(-10.49vh)"
               >
                 Kuriel#1411
               </Text>
@@ -193,14 +193,14 @@ export default function Home() {
                 ml="25px"
                 size="3xl"
                 boxShadow="5px 0 0 rgba(0, 0, 0, 0.1)"
-                transform="translateY(-150px)"
+                transform="translateY(-15.73vh)"
               />
               <Text
                 color="#B63627"
                 fontSize="24px"
                 fontFamily="arial_rounded_mt_boldregular"
                 mt="50px"
-                transform="translateY(-100px)"
+                transform="translateY(-10.49vh)"
               >
                 Jeff.#4821
               </Text>
@@ -283,14 +283,14 @@ export default function Home() {
                 ml="25px"
                 size="3xl"
                 boxShadow="5px 0 0 rgba(0, 0, 0, 0.1)"
-                transform="translateY(-150px)"
+                transform="translateY(-15.73vh)"
               />
               <Text
                 color="#B63627"
                 fontSize="24px"
                 fontFamily="arial_rounded_mt_boldregular"
                 mt="50px"
-                transform="translateY(-100px)"
+                transform="translateY(-10.49vh)"
               >
                 BlueFlower#6977
               </Text>
@@ -298,7 +298,7 @@ export default function Home() {
           </Box>
           <Box
             m="200px auto"
-            w="55%"
+            w={{ base: "90%", lg: "80%", md: "70%", xl: "55%" }}
             height="400px"
             borderRadius="25px"
             boxShadow="0 0 10px rgba(0, 0, 0, 0.5)"
@@ -310,14 +310,14 @@ export default function Home() {
                 ml="25px"
                 size="3xl"
                 boxShadow="5px 0 0 rgba(0, 0, 0, 0.1)"
-                transform="translateY(-150px)"
+                transform="translateY(-15.73vh)"
               />
               <Text
                 color="#B63627"
                 fontSize="24px"
                 fontFamily="arial_rounded_mt_boldregular"
                 mt="50px"
-                transform="translateY(-100px)"
+                transform="translateY(-10.49vh)"
               >
                 vindermermai#0007
               </Text>
@@ -368,20 +368,6 @@ export default function Home() {
                 Game ser realizado. É moderadora do servidor de Discord do
                 projeto.
               </Text>
-              <HStack pt="120px" pr="80%">
-                <SiDiscord
-                  size="48px"
-                  mt="50px"
-                  color="#B63627"
-                  cursor="pointer"
-                  onClick={(event) =>
-                    window.open(
-                      "https://discord.com/users/853258741158510602",
-                      "_blank"
-                    )
-                  }
-                />
-              </HStack>
             </VStack>
             <VStack>
               <Avatar
@@ -390,17 +376,41 @@ export default function Home() {
                 ml="25px"
                 size="3xl"
                 boxShadow="5px 0 0 rgba(0, 0, 0, 0.1)"
-                transform="translateY(-150px)"
+                transform="translateY(-15.73vh)"
               />
-              <Text
+              <Box
                 color="#B63627"
                 fontSize="24px"
                 fontFamily="arial_rounded_mt_boldregular"
                 mt="50px"
-                transform="translateY(-100px)"
+                transform="translateY(-10.49vh)"
+                w="100%"
               >
-                Hio#5708
-              </Text>
+                <HStack>
+                  <HStack pr="100%" justifyContent="left" display="flex">
+                    <SiDiscord
+                      size="48px"
+                      mt="50px"
+                      color="#B63627"
+                      cursor="pointer"
+                      onClick={(event) =>
+                        window.open(
+                          "https://discord.com/users/853258741158510602",
+                          "_blank"
+                        )
+                      }
+                    />
+                  </HStack>
+                  <Text
+                    pl="100%"
+                    color="#B63627"
+                    fontSize="24px"
+                    fontFamily="arial_rounded_mt_boldregular"
+                  >
+                    Hio#5708
+                  </Text>
+                </HStack>
+              </Box>
             </VStack>
           </Box>
           <Footer />
