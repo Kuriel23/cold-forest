@@ -81,16 +81,16 @@ export default function Home() {
                       w="fit-content"
                       borderBottomRadius="0.53vw"
                     >
-                      <RiMenu5Fill size="30px" color="white" />
+                      <RiMenu5Fill size="1.59vw" color="white" />
                     </MenuButton>
                     <MenuList
                       color="#B63627"
                       align="center"
-                      borderBottomRadius="25px"
-                      fontSize="24px"
+                      borderBottomRadius="1.32vw"
+                      fontSize="1.27vw"
                       fontFamily="Acme"
                       style={{ fontAlign: "center", textAlign: "center" }}
-                      boxShadow={`0px 0px 10px rgba(0, 0, 0, 0.4)`}
+                      boxShadow={`0vw 0vw 0.53vw rgba(0, 0, 0, 0.4)`}
                     >
                       <MenuItem>• Sobre</MenuItem>
                       <MenuItem
@@ -113,7 +113,7 @@ export default function Home() {
                         m="auto"
                         align="center"
                         p={1}
-                        mb="-10px"
+                        mb="-0.53vw"
                         borderTopRadius={25}
                         cursor="pointer"
                         onClick={(event) => (window.location.href = "/")}
@@ -137,7 +137,7 @@ export default function Home() {
                   pl="9.54vw"
                   display="inline-flex"
                   mt="2.65vw"
-                  gap="40px"
+                  gap="2.12vw"
                   style={{ transform: "translate(18.70vw, -9.35vw)" }}
                 >
                   <GrInstagram
@@ -171,15 +171,15 @@ export default function Home() {
                 </HStack>
               </VStack>
               <HStack m="0" style={{ justifyContent: "center" }} mb="0">
-                <VStack w="37%" ml="150px">
+                <VStack w="37%" ml="7.95vw">
                   <Box
                     bg="#B63627"
                     mr="36.5vh"
-                    transform="translateY(40px)"
+                    transform="translateY(2.12vw)"
                     p={1}
                     borderRadius="0.53vw"
                     zIndex={5}
-                    boxShadow="0px 0px 10px rgba(0, 0, 0, 0.7)"
+                    boxShadow="0vw 0vw 0.53vw rgba(0, 0, 0, 0.7)"
                   >
                     <FaTree size="2.54vw" color="white" />
                   </Box>
@@ -201,11 +201,11 @@ export default function Home() {
                   </Button>
                   <Box
                     bg="#B63627"
-                    transform="translate(-18vh, 40px)"
+                    transform="translate(-18vh, 2.12vw)"
                     p={1}
                     borderRadius="0.53vw"
                     zIndex={5}
-                    boxShadow="0px 0px 10px rgba(0, 0, 0, 0.7)"
+                    boxShadow="0vw 0vw 0.53vw rgba(0, 0, 0, 0.7)"
                   >
                     <FaTree size="2.54vw" color="white" />
                   </Box>
