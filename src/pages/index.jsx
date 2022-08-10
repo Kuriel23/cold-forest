@@ -94,9 +94,7 @@ export default function Home() {
                     >
                       <MenuItem>• Sobre</MenuItem>
                       <MenuItem
-                        onClick={(event) =>
-                          (window.location.href = "/discord")
-                        }
+                        onClick={(event) => (window.location.href = "/discord")}
                       >
                         • Suporte
                       </MenuItem>
@@ -220,6 +218,7 @@ export default function Home() {
                     color="white"
                     fontSize="1.69vw"
                     fontFamily="z_arista_lightregular"
+                    onClick={(event) => (window.location.href = "/coldgame")}
                   >
                     Cold Game
                   </Button>
