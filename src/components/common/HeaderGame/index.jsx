@@ -8,10 +8,10 @@ export function Header({ ...rest }) {
 
   return (
     <>
-      <VStack w="21.875rem" bg="#9D2B1F" h="100%">
+      <VStack w="17.875rem" bg="#9D2B1F" h="100%">
         <VStack mt="auto" mb="auto" fontSize="2.5rem" gap={3} ml="50%">
           <Text
-            color={asPath === "/coldgame" ? "black" : "white"}
+            color={asPath === "/coldgame" ? "#9D2B1F" : "white"}
             bg={asPath === "/coldgame" ? "white" : ""}
             borderRadius="1.5625rem"
             w="18.75rem"
@@ -22,7 +22,7 @@ export function Header({ ...rest }) {
             Início
           </Text>
           <Text
-            color={asPath === "/inventory" ? "black" : "white"}
+            color={asPath === "/inventory" ? "#9D2B1F" : "white"}
             bg={asPath === "/inventory" ? "white" : ""}
             borderRadius="1.5625rem"
             w="18.75rem"
@@ -33,7 +33,7 @@ export function Header({ ...rest }) {
             Inventário
           </Text>
           <Text
-            color={asPath === "/friends" ? "black" : "white"}
+            color={asPath === "/friends" ? "#9D2B1F" : "white"}
             bg={asPath === "/friends" ? "white" : ""}
             borderRadius="1.5625rem"
             w="18.75rem"
@@ -44,7 +44,7 @@ export function Header({ ...rest }) {
             Amigos
           </Text>
           <Text
-            color={asPath === "/rounds" ? "black" : "white"}
+            color={asPath === "/rounds" ? "#9D2B1F" : "white"}
             bg={asPath === "/rounds" ? "white" : ""}
             borderRadius="1.5625rem"
             w="18.75rem"
@@ -55,7 +55,7 @@ export function Header({ ...rest }) {
             Partidas
           </Text>
           <Text
-            color={asPath === "/farm" ? "black" : "white"}
+            color={asPath === "/farm" ? "#9D2B1F" : "white"}
             bg={asPath === "/farm" ? "white" : ""}
             borderRadius="1.5625rem"
             w="18.75rem"
