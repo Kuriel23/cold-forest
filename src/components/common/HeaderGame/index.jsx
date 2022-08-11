@@ -1,14 +1,21 @@
-import { IconButton, VStack, Text, Image } from "@chakra-ui/react";
-import { HiHome } from "react-icons/hi";
+import { VStack, Text } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
-export function Header({ ...rest }) {
-
+export function Header() {
   const { asPath } = useRouter();
+  const routes = useRouter()
 
   return (
     <>
-      <VStack w="17.875rem" bg="#9D2B1F" backgroundImage="/coldgame.png" backgroundPosition="center 4.375rem" backgroundSize="15.625rem" backgroundRepeat="no-repeat" h="100rem">
+      <VStack
+        w="17.875rem"
+        bg="#9D2B1F"
+        backgroundImage="/coldgame.png"
+        backgroundPosition="center 4.375rem"
+        backgroundSize="15.625rem"
+        backgroundRepeat="no-repeat"
+        h="100rem"
+      >
         <VStack mt="auto" mb="auto" fontSize="2.5rem" gap={3} ml="50%">
           <Text
             color={asPath === "/coldgame" ? "#9D2B1F" : "white"}
@@ -17,7 +24,7 @@ export function Header({ ...rest }) {
             w="18.75rem"
             pl="0.9375rem"
             cursor="pointer"
-            onClick={(event) => (window.location.href = "/coldgame")}
+            onClick={(event) => routes.push("/coldgame")}
           >
             Início
           </Text>
@@ -28,7 +35,7 @@ export function Header({ ...rest }) {
             w="18.75rem"
             pl="0.9375rem"
             cursor="pointer"
-            onClick={(event) => (window.location.href = "/inventory")}
+            onClick={(event) => routes.push("/inventory")}
           >
             Inventário
           </Text>
@@ -39,7 +46,7 @@ export function Header({ ...rest }) {
             w="18.75rem"
             pl="0.9375rem"
             cursor="pointer"
-            onClick={(event) => (window.location.href = "/friends")}
+            onClick={(event) => routes.push("/friends")}
           >
             Amigos
           </Text>
@@ -50,7 +57,7 @@ export function Header({ ...rest }) {
             w="18.75rem"
             pl="0.9375rem"
             cursor="pointer"
-            onClick={(event) => (window.location.href = "/rounds")}
+            onClick={(event) => routes.push("/coldgame")}
           >
             Partidas
           </Text>
@@ -61,7 +68,7 @@ export function Header({ ...rest }) {
             w="18.75rem"
             pl="0.9375rem"
             cursor="pointer"
-            onClick={(event) => (window.location.href = "/farm")}
+            onClick={(event) => routes.push("/coldgame")}
           >
             Farm CC
           </Text>
