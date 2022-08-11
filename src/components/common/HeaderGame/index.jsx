@@ -1,4 +1,4 @@
-import { IconButton, VStack, Text } from "@chakra-ui/react";
+import { IconButton, VStack, Text, Image } from "@chakra-ui/react";
 import { HiHome } from "react-icons/hi";
 import { useRouter } from "next/router";
 
@@ -8,7 +8,7 @@ export function Header({ ...rest }) {
 
   return (
     <>
-      <VStack w="17.875rem" bg="#9D2B1F" h="100%">
+      <VStack w="17.875rem" bg="#9D2B1F" backgroundImage="/coldgame.png" backgroundPosition="center 4.375rem" backgroundSize="15.625rem" backgroundRepeat="no-repeat" h="100rem">
         <VStack mt="auto" mb="auto" fontSize="2.5rem" gap={3} ml="50%">
           <Text
             color={asPath === "/coldgame" ? "#9D2B1F" : "white"}
