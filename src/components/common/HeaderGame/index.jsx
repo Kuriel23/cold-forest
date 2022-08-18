@@ -31,8 +31,8 @@ export function Header() {
             Início
           </Text>
           <Text
-            color={asPath === "/inventory" ? "#9D2B1F" : "white"}
-            bg={asPath === "/inventory" ? "white" : ""}
+            color={asPath.startsWith("/inventory") ? "#9D2B1F" : "white"}
+            bg={asPath.startsWith("/inventory") ? "white" : ""}
             borderRadius="1.5625rem"
             w="18.75rem"
             pl="0.9375rem"
