@@ -14,7 +14,9 @@ export function Header() {
         backgroundPosition="center 4.375rem"
         backgroundSize="15.625rem"
         backgroundRepeat="no-repeat"
-        h="100%"
+        minH="max-content"
+        overflowY="auto"
+        overflowX="hidden"
       >
         <VStack mt="auto" mb="auto" fontSize="2.5rem" gap={3} ml="50%">
           <Text
