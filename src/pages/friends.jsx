@@ -9,8 +9,19 @@ import {
   VStack,
   Divider,
   Box,
-    Button,
-    Avatar
+  Button,
+  Avatar,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Input,
+  FormControl,
+  FormLabel,
 } from "@chakra-ui/react";
 
 export default function Friends() {
@@ -18,6 +29,8 @@ export default function Friends() {
     base: false,
     lg: true,
   });
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen2, onOpen2, onClose2 } = useDisclosure();
   return (
     <>
       <div
@@ -32,6 +45,71 @@ export default function Friends() {
       >
         <SEO />
         <Container>
+          <Modal onClose={onClose} isOpen={isOpen} isCentered>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader
+                align="center"
+                color="#B63627"
+                fontSize="3xl"
+                fontFamily="arial_rounded_mt_boldregular"
+              >
+                Adicionar amigo
+              </ModalHeader>
+              <ModalBody>
+                <FormControl isRequired>
+                  <FormLabel>ID do Amigo</FormLabel>
+                  <Input placeholder="354233941550694400" />
+                </FormControl>
+              </ModalBody>
+              <ModalFooter>
+                <Button
+                  onClick={onOpen2}
+                  _hover={{ bg: "green.600", color: "" }}
+                  bg="green"
+                  mr="10px"
+                  color="white"
+                >
+                  Confirmar
+                </Button>
+                <Button
+                  onClick={onClose}
+                  bg="red"
+                  _hover={{ bg: "red.700", color: "" }}
+                  color="white"
+                >
+                  Fechar
+                </Button>
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
+          <Modal onClose={onClose2} isOpen={isOpen2} isCentered>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader
+                align="center"
+                color="#B63627"
+                fontSize="3xl"
+                fontFamily="arial_rounded_mt_boldregular"
+              >
+                Pedido de amizade solicitado com sucesso!
+              </ModalHeader>
+              <ModalBody>Ff</ModalBody>
+              <ModalFooter>
+                <Button
+                  onClick={onClose2}
+                  bg="green"
+                  _hover={{
+                    bg: "green.600",
+                    color: "",
+                  }}
+                  color="white"
+                >
+                  Entendi
+                </Button>
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
           <Section h="100vh" flexDir="row">
             <Header />
             <VStack ml="auto" mr="auto">
@@ -45,7 +123,7 @@ export default function Friends() {
                   Lista de amigos
                 </Text>
                 <Button
-                  p="1.875rem"
+                  p="10px"
                   bg="#B63627"
                   flexDirection="right"
                   _hover={{ bg: "#9D2B1F" }}
@@ -53,6 +131,7 @@ export default function Friends() {
                   borderTopRadius={25}
                   alignContent="flex-end"
                   borderBottomLeftRadius={25}
+                  onClick={onOpen}
                 >
                   Adicionar amigo
                 </Button>
@@ -68,7 +147,7 @@ export default function Friends() {
                 <VStack
                   pl="1rem"
                   align="self-start"
-                  //backgroundImage="https://images.hdqwalls.com/wallpapers/northern-lights-aurora-borealis-4k-fz.jpg"
+                  backgroundImage="https://images.hdqwalls.com/wallpapers/northern-lights-aurora-borealis-4k-fz.jpg"
                   backgroundPosition="top left"
                 >
                   <HStack mt="0.3125rem">
@@ -81,7 +160,11 @@ export default function Friends() {
                       Kuriel#1411
                     </Text>
                   </HStack>
-                  <Divider align="center" mb="0.3125rem" borderColor="#B63627" />
+                  <Divider
+                    align="center"
+                    mb="0.3125rem"
+                    borderColor="#B63627"
+                  />
                 </VStack>
                 <VStack
                   pl="1rem"
@@ -99,7 +182,11 @@ export default function Friends() {
                       Kuriel#1411
                     </Text>
                   </HStack>
-                  <Divider align="center" mb="0.3125rem" borderColor="#B63627" />
+                  <Divider
+                    align="center"
+                    mb="0.3125rem"
+                    borderColor="#B63627"
+                  />
                 </VStack>
                 <VStack
                   pl="1rem"
@@ -117,7 +204,11 @@ export default function Friends() {
                       Kuriel#1411
                     </Text>
                   </HStack>
-                  <Divider align="center" mb="0.3125rem" borderColor="#B63627" />
+                  <Divider
+                    align="center"
+                    mb="0.3125rem"
+                    borderColor="#B63627"
+                  />
                 </VStack>
                 <VStack
                   pl="1rem"
@@ -134,7 +225,137 @@ export default function Friends() {
                       Kuriel#1411
                     </Text>
                   </HStack>
-                  <Divider align="center" mb="0.3125rem" borderColor="#B63627" />
+                  <Divider
+                    align="center"
+                    mb="0.3125rem"
+                    borderColor="#B63627"
+                  />
+                </VStack>
+                <VStack
+                  pl="1rem"
+                  align="self-start"
+                  backgroundPosition="center"
+                >
+                  <HStack mt="0.3125rem">
+                    <Avatar src="https://cdn.discordapp.com/avatars/354233941550694400/a_e35d10c150b1354b1eea12b4655837a4.gif?size=4096" />
+                    <Text
+                      color="#B63627"
+                      fontSize="2.5rem"
+                      fontFamily="arial_rounded_mt_boldregular"
+                    >
+                      Kuriel#1411
+                    </Text>
+                  </HStack>
+                  <Divider
+                    align="center"
+                    mb="0.3125rem"
+                    borderColor="#B63627"
+                  />
+                </VStack>{" "}
+                <VStack
+                  pl="1rem"
+                  align="self-start"
+                  backgroundPosition="center"
+                >
+                  <HStack mt="0.3125rem">
+                    <Avatar src="https://cdn.discordapp.com/avatars/354233941550694400/a_e35d10c150b1354b1eea12b4655837a4.gif?size=4096" />
+                    <Text
+                      color="#B63627"
+                      fontSize="2.5rem"
+                      fontFamily="arial_rounded_mt_boldregular"
+                    >
+                      Kuriel#1411
+                    </Text>
+                  </HStack>
+                  <Divider
+                    align="center"
+                    mb="0.3125rem"
+                    borderColor="#B63627"
+                  />
+                </VStack>{" "}
+                <VStack
+                  pl="1rem"
+                  align="self-start"
+                  backgroundPosition="center"
+                >
+                  <HStack mt="0.3125rem">
+                    <Avatar src="https://cdn.discordapp.com/avatars/354233941550694400/a_e35d10c150b1354b1eea12b4655837a4.gif?size=4096" />
+                    <Text
+                      color="#B63627"
+                      fontSize="2.5rem"
+                      fontFamily="arial_rounded_mt_boldregular"
+                    >
+                      Kuriel#1411
+                    </Text>
+                  </HStack>
+                  <Divider
+                    align="center"
+                    mb="0.3125rem"
+                    borderColor="#B63627"
+                  />
+                </VStack>{" "}
+                <VStack
+                  pl="1rem"
+                  align="self-start"
+                  backgroundPosition="center"
+                >
+                  <HStack mt="0.3125rem">
+                    <Avatar src="https://cdn.discordapp.com/avatars/354233941550694400/a_e35d10c150b1354b1eea12b4655837a4.gif?size=4096" />
+                    <Text
+                      color="#B63627"
+                      fontSize="2.5rem"
+                      fontFamily="arial_rounded_mt_boldregular"
+                    >
+                      Kuriel#1411
+                    </Text>
+                  </HStack>
+                  <Divider
+                    align="center"
+                    mb="0.3125rem"
+                    borderColor="#B63627"
+                  />
+                </VStack>{" "}
+                <VStack
+                  pl="1rem"
+                  align="self-start"
+                  backgroundPosition="center"
+                >
+                  <HStack mt="0.3125rem">
+                    <Avatar src="https://cdn.discordapp.com/avatars/354233941550694400/a_e35d10c150b1354b1eea12b4655837a4.gif?size=4096" />
+                    <Text
+                      color="#B63627"
+                      fontSize="2.5rem"
+                      fontFamily="arial_rounded_mt_boldregular"
+                    >
+                      Kuriel#1411
+                    </Text>
+                  </HStack>
+                  <Divider
+                    align="center"
+                    mb="0.3125rem"
+                    borderColor="#B63627"
+                  />
+                </VStack>{" "}
+                <VStack
+                  pl="1rem"
+                  align="self-start"
+                  backgroundPosition="center"
+                >
+                  <HStack mt="0.3125rem">
+                    <Avatar src="https://cdn.discordapp.com/avatars/354233941550694400/a_e35d10c150b1354b1eea12b4655837a4.gif?size=4096" />
+                    <Text
+                      color="#B63627"
+                      fontSize="2.5rem"
+                      fontFamily="arial_rounded_mt_boldregular"
+                    >
+                      Kuriel#1411
+                    </Text>
+                  </HStack>
+                  <Divider
+                    align="center"
+                    mb="0.3125rem"
+                    borderColor="#B63627"
+                  />
                 </VStack>
               </Box>
             </VStack>
